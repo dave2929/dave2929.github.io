@@ -64,7 +64,7 @@
       height: 250px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: solid 3px #eece1a; }
+      border: solid 5px #eece1a; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -143,11 +143,11 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(76, 76, 76, 0.5); }
     h1.sm-heading.light,
     h2.sm-heading.light,
     h3.sm-heading.light {
-      background: rgba(225, 225, 225, 0.5); }
+      background: rgba(228, 228, 228, 0.5); }
 
 a {
   color: #fff;
@@ -185,7 +185,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #eece1a 3px solid; }
+    border: #eece1a 5px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -261,7 +261,9 @@ main {
 
 .color {
   cursor: pointer;
-  align-items: center; }
+  position: fixed;
+  bottom: 7vh;
+  right: 50px; }
 
 @media screen and (min-width: 1171px) {
   .projects {

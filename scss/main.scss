@@ -7,12 +7,20 @@
 
 body {
   @include background();
-  background: $primary-color;
-  color: set-text-color($primary-color);
+  background: $dark;
+  color: set-text-color($dark);
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
+
+  &.light {
+    background: $light;
+    color: set-text-color($light);
+    i {
+      color: black;
+    }
+  }
 }
 
 // headings
@@ -21,7 +29,6 @@ h2,
 h3 {
   margin: 0;
   font-weight: 400;
-
   &.lg-heading {
     font-size: 6rem; // 1 rem = 16px(html default)
   }
@@ -29,7 +36,11 @@ h3 {
   &.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
+    background: rgba(lighten($dark, 2), 0.5);
+
+    &.light {
+      background: rgba(lighten($light, 2), 0.5);
+    }
   }
 }
 
@@ -107,9 +118,13 @@ main {
   }
 
   .job {
-    background: lighten($primary-color, 5);
+    background: lighten($dark, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
+
+    &.light {
+      background: lighten($light, 5);
+    }
   }
 }
 
@@ -141,11 +156,14 @@ main {
 
   div {
     font-size: 2rem;
-    border: 3px #fff solid;
+    border: 3px set-text-color($dark) solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
     @include easeOut();
 
+    &.light {
+      border: 3px set-text-color($light) solid;
+    }
     &:hover {
       padding: 0.5rem 1.5rem;
       background: $secondary-color;
@@ -169,24 +187,31 @@ main {
   }
 }
 
-.btn-dark {
-  @extend .btn;
-  background: darken($primary-color, 50);
-  color: #fff;
-}
+#work {
+  .btn-dark {
+    @extend .btn;
+    background: darken($dark, 50);
+    color: #fff;
+  }
 
-.btn-light {
-  @extend .btn;
-  background: lighten($primary-color, 50);
-  color: #fff;
+  .btn-light {
+    @extend .btn;
+    background: lighten($dark, 50);
+    color: #fff;
+  }
 }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: darken($primary-color, 10);
-  color: set-text-color($primary-color);
+  background: darken($dark, 10);
+  color: set-text-color($dark);
   height: 60px;
+}
+
+.color {
+  cursor: pointer;
+  align-items: center;
 }
 
 @import "mobile";

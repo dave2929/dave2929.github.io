@@ -15,7 +15,7 @@ body {
   line-height: 1.5;
 
   &.light {
-    background: $light;
+    background: darken($light, 1);
     color: set-text-color($light);
     i {
       color: black;
@@ -40,7 +40,7 @@ h3 {
     background: rgba(lighten($dark, 3), 0.8);
 
     &.light {
-      background: rgba(lighten($light, 3), 0.5);
+      background: rgba(lighten($light, 3), 0.6);
     }
   }
 }

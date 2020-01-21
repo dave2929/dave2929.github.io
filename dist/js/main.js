@@ -78,7 +78,6 @@ function changeTheme() {
     }
     if (aboutBody !== null) {
       jobs.forEach(item => item.classList.add("light"));
-      smHeading.classList.add("light");
       aboutBody.classList.add("light");
       btnLines.forEach(item => item.classList.add("light"));
       menuNav.classList.add("light");
@@ -99,7 +98,6 @@ function changeTheme() {
     if (contactBody !== null) {
       contactBody.classList.add("light");
       contacts.forEach(item => item.classList.add("light"));
-      smHeading.classList.add("light");
       btnLines.forEach(item => item.classList.add("light"));
       menuNav.classList.add("light");
       menuBranding.classList.add("light");
@@ -118,7 +116,6 @@ function changeTheme() {
     }
     if (aboutBody !== null) {
       jobs.forEach(item => item.classList.remove("light"));
-      smHeading.classList.remove("light");
       aboutBody.classList.remove("light");
       btnLines.forEach(item => item.classList.remove("light"));
       menuNav.classList.remove("light");
@@ -138,7 +135,6 @@ function changeTheme() {
     if (contactBody !== null) {
       contactBody.classList.remove("light");
       contacts.forEach(item => item.classList.remove("light"));
-      smHeading.classList.remove("light");
       btnLines.forEach(item => item.classList.remove("light"));
       menuNav.classList.remove("light");
       menuBranding.classList.remove("light");

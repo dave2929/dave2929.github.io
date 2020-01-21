@@ -211,6 +211,9 @@ main {
       margin-top: 5px;
       margin-bottom: 0px; }
 
+#about h1 {
+  margin-bottom: 50px; }
+
 .projects {
   display: grid;
   grid-gap: 0.7rem;
@@ -243,6 +246,9 @@ main {
       color: #000; }
       .boxes div:hover span {
         color: #000; }
+
+#contact h1 {
+  margin-bottom: 50px; }
 
 .btn, #work .btn-dark, #work .btn-light {
   display: block;

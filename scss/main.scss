@@ -136,6 +136,10 @@ main {
   }
 }
 
+#about h1 {
+  margin-bottom: 50px;
+}
+
 // Work/Projects
 .projects {
   display: grid;
@@ -181,6 +185,10 @@ main {
       }
     }
   }
+}
+
+#contact h1 {
+  margin-bottom: 50px;
 }
 
 // Button Styles

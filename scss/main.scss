@@ -35,8 +35,9 @@ h3 {
 
   &.sm-heading {
     margin-bottom: 2rem;
+    display: inline-block;
     padding: 0.2rem 1rem;
-    background: rgba(lighten($dark, 3), 0.5);
+    background: rgba(lighten($dark, 3), 0.8);
 
     &.light {
       background: rgba(lighten($light, 3), 0.5);
@@ -212,7 +213,7 @@ main {
 .color {
   cursor: pointer;
   position: fixed;
-  bottom: 7vh;
+  bottom: 5vh;
   right: 50px;
 }
 

@@ -116,15 +116,22 @@ main {
 
   .job-3 {
     grid-area: job3;
+    text-align: center;
+    line-height: 200px;
   }
 
   .job {
     background: lighten($dark, 5);
-    padding: 0.5rem;
+    padding: 1rem;
     border-bottom: $secondary-color 5px solid;
 
     &.light {
       background: lighten($light, 5);
+    }
+
+    h5 {
+      margin-top: 5px;
+      margin-bottom: 0px;
     }
   }
 }
@@ -207,7 +214,7 @@ main {
   padding: 1rem;
   background: darken($dark, 10);
   color: set-text-color($dark);
-  height: 60px;
+  height: 100%;
 }
 
 .color {
